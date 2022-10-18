@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './assets/styles/scss/index.scss';
-import Dashboard from './pages/Dashboard.jsx';
+import Main from './pages/Main.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Dashboard />
+    <Main />
   </React.StrictMode>
 );
 
