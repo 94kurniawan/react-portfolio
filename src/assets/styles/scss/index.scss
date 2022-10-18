@@ -1,3 +1,24 @@
-.bg-utama {
-  background-color: rgb(206, 206, 206);
+body {
+  margin: 0; padding: 0;
+}
+
+.layout {
+  width: 100%;
+  &__main {
+    background-color: white;
+    &--header {
+      position: sticky;
+      top: 0;
+      padding: 1rem;
+      background-color: white;
+    }
+    &--content {
+      padding: 1rem 0;
+      background-color: aqua;
+    }
+    &--footer {
+      padding: 1rem;
+      background-color: bisque;
+    }
+  }
 }
