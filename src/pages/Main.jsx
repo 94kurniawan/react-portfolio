@@ -8,6 +8,8 @@ import coffee from "./../assets/img/coffee.svg";
 import coffeeMaker from "./../assets/img/coffeeMaker.svg";
 import github from "./../assets/img/github.svg";
 import twitter from "./../assets/img/twitter.svg";
+import coding from "./../assets/img/coding.svg";
+import design from "./../assets/img/design.svg";
 
 function Main() {
     const header = <div className="flex items-center 2xl:px-60">
@@ -39,7 +41,8 @@ function Main() {
 
     const experience = <div className="text-center pb-32 2xl:px-80">
         <p className="font-bold text-2xl">Hi, I'm Budi Kurniawan. Nice to meet you</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla atque minima doloremque, tenetur officiis blanditiis aspernatur dolorum fugiat, doloribus rem tempora voluptatum iste natus ducimus ipsum optio nihil! Fuga, cupiditate. Ducimus, animi sed sapiente voluptatem odio ex laborum hic facilis excepturi quidem eum laboriosam doloribus ipsam eligendi optio similique sit aperiam suscipit fugiat quam itaque adipisci eius pariatur iusto. Rem.</p>
+        <p>I became interested in computer technology at the beginning of vocational high school and finally I decided to continue studying Informatics Engineering in UNIKOM Bandung. With great motivation, I finally founded my own technology company with some friends called NULL REBORN in 2016. Running a company with limited resources and funds make the whole team especially me to concurrently and focus on multiple responsibilities in order to maintain company stability. I am CEO and also Product Owner, IT Consultant, and Frontend engineer, I have to do a job with a high level of stress, sometimes I have bad experience with time management when several task running at the same time. But the good thing I got is I became a person who dared to make decisions and solve the problems in a fairly limited time.
+            As Frontend Engineer and Developer I have more than 6 years experience in building and integrating webpage using modern CSS framework (Bootstrap, Tailwind CSS) and modern javascript framework (Vue JS, React Js).</p>
     </div>
 
     return (
@@ -52,18 +55,88 @@ function Main() {
                 <div className="px-8 py-14 bg-blue-800 text-white">
                     {experience}
                 </div>
-                <div className="absolute -mt-24 w-full flex justify-center">
-                    <div className="w-3/4 bg-white grid grid-cols-1 lg:grid-cols-3 lg:gap-0 gap-5 border-2 border-blue-300 rounded-2xl">
-                        <div className="border-r-2 border-blue-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore possimus in assumenda cumque error quisquam laboriosam, numquam iure hic necessitatibus pariatur, ullam, reprehenderit eos. Optio quos necessitatibus corporis placeat illum suscipit nisi facilis praesentium dicta consectetur officiis velit, dolore sequi? Optio aliquid vel sint eos hic mollitia similique enim temporibus?</div>
-                        <div className="border-r-2 border-blue-300">test</div>
-                        <div className=" border-blue-300">test</div>
+                <div className="grid grid-flow-row -mt-24 w-full ">
+                    {/* skills */}
+                    <div className="w-100 flex justify-center">
+                        <div className="w-3/4 bg-white grid grid-flow-row grid-cols-1 lg:grid-cols-2 lg:gap-0 gap-2 border-2 border-blue-800 rounded-2xl">
+                            {/* <div className="p-4">
+                                <div className="flex justify-center">
+                                    <img className="w-14 h-14 self-end" src={design} alt="" />
+                                </div>
+                                <div className="font-bold text-center py-4">UI / UX</div>
+                                <div>content</div>
+                            </div> */}
+                            <div className="p-4 lg:border-r">
+                                <div className="flex justify-center">
+                                    <img className="w-14 h-14 self-end" src={coding} alt="" />
+                                </div>
+                                <div className="font-bold text-center py-4">FrontEnd Engineer</div>
+                                <div className="text-center text-blue-800 py-3 font-mono">Language I Speak & Framework:</div>
+                                <div className="font-mono text-center py-2">HTML, CSS, JavaScript, Sass, Bootstrap, Tailwind Css, Vue Js, React Js, Kendo Ui.</div>
+                                <div className="text-center text-blue-800 pt-9 pb-3 font-mono">Additional Tools:</div>
+                                <div className="font-mono text-center py-2">
+                                    <p>Version Control = Git</p>
+                                    <p>Github, Gitlab, Azure DevOps</p>
+                                    <p>VS Code, Atom</p>
+                                    <p>Terminal, Command Prompt</p>
+                                    <p>Linux, MacOs, Windows</p>
+                                </div>
+                            </div>
+                            <div className="p-4">
+                                <div className="flex justify-center">
+                                    <img className="w-14 h-14 self-end" src={design} alt="" />
+                                </div>
+                                <div className="font-bold text-center py-4">UI / UX</div>
+                                <div>content</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div className="layout__main--footer">
-                <div className="flex items-center gap-3">
-                    <img className="w-8 h-8 stroke-blue-600" src={github} alt="" />
-                    <img className="w-8 h-8" src={twitter} alt="" />
+                    {/* Technical Experience */}
+                    <div className="px-8 py-24">
+                        <p className="text-center font-bold text-2xl">Some of Technical Experience</p>
+                        <p className="italic text-center font-light">and still counting ...</p>
+                        <div className="w-100 flex justify-center">
+                            <div className="w-3/4 py-6 grid grid-flow-row grid-cols-1 lg:grid-cols-3 gap-3">
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi, quod quibusdam expedita magni aut rerum dignissimos recusandae laborum commodi cupiditate officia, assumenda autem, consequuntur quaerat. Rem eum, quam qui non, provident ut dolore illo doloremque veritatis dolores iste veniam doloribus eveniet accusamus vel ex unde! Corporis debitis iusto nisi.</div>
+                                <div className="bg-yellow-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi, quod quibusdam expedita magni aut rerum dignissimos recusandae laborum commodi cupiditate officia, assumenda autem, consequuntur quaerat. Rem eum, quam qui non, provident ut dolore illo doloremque veritatis dolores iste veniam doloribus eveniet accusamus vel ex unde! Corporis debitis iusto nisi.</div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi, quod quibusdam expedita magni aut rerum dignissimos recusandae laborum commodi cupiditate officia, assumenda autem, consequuntur quaerat. Rem eum, quam qui non, provident ut dolore illo doloremque veritatis dolores iste veniam doloribus eveniet accusamus vel ex unde! Corporis debitis iusto nisi.</div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi, quod quibusdam expedita magni aut rerum dignissimos recusandae laborum commodi cupiditate officia, assumenda autem, consequuntur quaerat. Rem eum, quam qui non, provident ut dolore illo doloremque veritatis dolores iste veniam doloribus eveniet accusamus vel ex unde! Corporis debitis iusto nisi.</div>
+                                <div className="bg-yellow-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi, quod quibusdam expedita magni aut rerum dignissimos recusandae laborum commodi cupiditate officia, assumenda autem, consequuntur quaerat. Rem eum, quam qui non, provident ut dolore illo doloremque veritatis dolores iste veniam doloribus eveniet accusamus vel ex unde! Corporis debitis iusto nisi.</div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi, quod quibusdam expedita magni aut rerum dignissimos recusandae laborum commodi cupiditate officia, assumenda autem, consequuntur quaerat. Rem eum, quam qui non, provident ut dolore illo doloremque veritatis dolores iste veniam doloribus eveniet accusamus vel ex unde! Corporis debitis iusto nisi.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    {/* Colaboration Company */}
+                    <div className="px-8 py-24">
+                        <p className="text-center font-bold text-2xl">I'm proud to have collaborated with some awesome companies:</p>
+                        <p className="italic text-center font-light">and still counting ...</p>
+                        <div className="w-100 flex justify-center">
+                            <div className="w-3/4 py-6 grid grid-flow-row grid-cols-1 lg:grid-cols-3 gap-3">
+                                <div className="p-4 bg-yellow-300 rounded-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</div>
+                                <div className="p-4 bg-blue-300 rounded-lg">NULL REBORN</div>
+                                <div className="p-4 bg-yellow-300 rounded-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</div>
+                                <div className="p-4 bg-blue-300 rounded-lg">NULL REBORN</div>
+                                <div className="p-4 bg-yellow-300 rounded-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</div>
+                                <div className="p-4 bg-blue-300 rounded-lg">NULL REBORN</div>
+                                <div className="p-4 bg-yellow-300 rounded-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</div>
+                                <div className="p-4 bg-blue-300 rounded-lg">NULL REBORN</div>
+                                <div className="p-4 bg-yellow-300 rounded-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Interest Colaboration.? */}
+
+                    {/* Footer */}
+                    <div className="layout__main--footer">
+                        <div className="flex items-center gap-3">
+                            <img className="w-8 h-8 stroke-blue-600" src={github} alt="" />
+                            <img className="w-8 h-8" src={twitter} alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
