@@ -12,7 +12,7 @@ import coding from "./../assets/img/coding.svg";
 import design from "./../assets/img/design.svg";
 
 function Main() {
-    const header = <div className="flex items-center 2xl:px-60">
+    const header = <div className="flex items-center lg:w-3/4">
         <svg className="w-14 h-14 stroke-2 text-blue-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
             <path strokeLinejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
         </svg>
@@ -20,8 +20,12 @@ function Main() {
     </div>;
 
     const intro = <div className="">
-        <p className="text-3xl font-bold text-center">Senior Frontend Engineer / Developer & UI/UX Designer</p>
-        <p className="text-center font-light py-2">I design and code beautifully simple things more than 6 years experience, combine tools and framework/library like Vue Js, React Js, Tailwind CSS, Bootstrap etc.</p>
+        <div className="w-100 flex justify-center">
+            <div className="w-3/4">
+                <p className="text-3xl font-bold text-center">Senior Frontend Engineer / Developer & UI/UX Designer</p>
+                <p className="text-center font-light py-2">I design and code beautifully simple things more than 6 years experience, combine tools and framework/library like Vue Js, React Js, Tailwind CSS, Bootstrap etc.</p>
+            </div>
+        </div>
         <div className="flex justify-center py-8 relative">
             <div className="px-1 bg-blue-500 rounded-full animate-spin">
                 <div className="w-52 h-52 bg-white"> </div>
@@ -39,20 +43,21 @@ function Main() {
         </div>
     </div>
 
-    const experience = <div className="text-center pb-32 2xl:px-80">
+    const experience = <div className="text-center pb-32 lg:w-3/4">
         <p className="font-bold text-2xl">Hi, I'm Budi Kurniawan. Nice to meet you</p>
-        <p>I became interested in computer technology at the beginning of vocational high school and finally I decided to continue studying Informatics Engineering in UNIKOM Bandung. With great motivation, I finally founded my own technology company with some friends called NULL REBORN in 2016. Running a company with limited resources and funds make the whole team especially me to concurrently and focus on multiple responsibilities in order to maintain company stability. I am CEO and also Product Owner, IT Consultant, and Frontend engineer, I have to do a job with a high level of stress, sometimes I have bad experience with time management when several task running at the same time. But the good thing I got is I became a person who dared to make decisions and solve the problems in a fairly limited time.
-            As Frontend Engineer and Developer I have more than 6 years experience in building and integrating webpage using modern CSS framework (Bootstrap, Tailwind CSS) and modern javascript framework (Vue JS, React Js).</p>
+        <p className="font-thin italic text-sm">a little story about me...</p>
+        <p>With great motivation, I finally founded my own technology company with some friends called NULL REBORN in 2016. Running a company with limited resources and funds make the whole team especially me to concurrently and focus on multiple responsibilities in order to maintain company stability. I am CEO and also Product Owner, IT Consultant, and Frontend engineer, I have to do a job with a high level of stress, sometimes I have bad experience with time management when several task running at the same time. But the good thing I got is I became a person who dared to make decisions and solve the problems in a fairly limited time.</p>
+        <p>As Frontend Engineer and Developer I have more than 6 years experience in building and integrating web app using modern CSS framework (Bootstrap, Tailwind CSS) and modern javascript framework (Vue JS, React Js).</p>
     </div>
 
     return (
         <div className="layout layout__main">
-            <div className="layout__main--header">{header}</div>
+            <div className="layout__main--header w-100 flex justify-center">{header}</div>
             <div className="layout__main--content">
-                <div className="py-1">
+                <div className="py-1 w-100">
                     {intro}
                 </div>
-                <div className="px-8 py-14 bg-blue-800 text-white">
+                <div className="px-8 py-14 bg-blue-800 text-white w-100 flex justify-center">
                     {experience}
                 </div>
                 <div className="grid grid-flow-row -mt-24 w-full ">
@@ -77,7 +82,7 @@ function Main() {
                                 <div className="font-mono text-center py-2">
                                     <p>Version Control = Git</p>
                                     <p>Github, Gitlab, Azure DevOps</p>
-                                    <p>VS Code, Atom</p>
+                                    <p>WebStorm, VS Code, Atom</p>
                                     <p>Terminal, Command Prompt</p>
                                     <p>Linux, MacOs, Windows</p>
                                 </div>
