@@ -11,7 +11,7 @@ let title = "Senior Frontend Engineer / Developer & UI/UX Designer"
 
 function Main() {
     const [getName, setName] = useState({name:"", address:"Jalan"})
-    const [group, setGroup] = useState("G");
+    const [group, setGroup] = useState("users");
     const changeName = () => {
         // setName({name:'BB'})
         setName({name:'BB',address: 'Jalan BB'})
@@ -25,10 +25,17 @@ function Main() {
     }
 
     useEffect(() => {
+        console.log('onMount only');
+        fetch(`https://jsonplaceholder.typicode.com/${group}`)
+            .then(response => response.json())
+            .then(json => console.log(json, '<<<<<<<<<<<'))
+    },[])
+
+    useEffect(() => {
         // alert('group Effect')
         customAlert()
     },[group])
-
+ 
     // useEffect(() => {
     //     alert('Name effect')
     //     document.title = getName.address
